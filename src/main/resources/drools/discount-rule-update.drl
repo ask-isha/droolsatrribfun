@@ -1,0 +1,40 @@
+/*package drools;
+
+import com.drools.Product;
+import com.drools.Person;
+
+rule "modify-product"
+
+when 
+ $product:Product(productName=="Laptop")
+
+then
+ System.out.println("modify-product rule invoked");
+ modify($product)
+ {
+ setProductPrice(70000),setProductName("Dell Laptop");
+ }
+end
+
+rule "discount-rule"
+when
+    
+   $product:Product($productPrice:productPrice>50000) 
+   Person(userType=="Regular")
+
+then
+   	System.out.println("discount-rule invoked");
+    $product.setDiscount(0.1*$productPrice);
+end
+
+
+rule "print-product-details"
+when
+	$product:Product()
+then
+    System.out.println("print-product-details invoked");
+	System.out.println("product name::"+$product.getProductName());
+	System.out.println("product price::"+$product.getProductPrice());
+	System.out.println("discount::"+$product.getDiscount());
+
+end*/

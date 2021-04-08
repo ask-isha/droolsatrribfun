@@ -1,0 +1,17 @@
+/*package drools;
+
+import com.drools.Product;
+
+rule "first-rule"
+
+dialect "java"
+
+when
+    
+   $product:Product($productPrice:productPrice>50000)
+
+then
+    System.out.println("first rule invoked");
+    $product.setDiscount(0.1*$productPrice);
+    
+end*/

@@ -1,0 +1,16 @@
+/*package drools;
+
+import com.drools.Product;
+import com.drools.Person;
+import com.drools.Address;
+
+rule "from-example"
+
+when
+ 	$person:Person();
+  	$addressRef:Address(city.equalsIgnoreCase("HYD")) from $person.address;
+then
+	System.out.println("$address::::"+$addressRef.getCity());
+	
+	
+end*/

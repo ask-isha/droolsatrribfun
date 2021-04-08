@@ -1,0 +1,15 @@
+/*package drools;
+
+import com.drools.Product;
+import com.drools.Person;
+
+rule "forall-example"
+
+when
+ 	forall (Person(age>40))
+
+then
+	System.out.println("forall...........");
+	
+	
+end*/

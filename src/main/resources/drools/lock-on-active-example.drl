@@ -1,0 +1,31 @@
+/*package drools;
+
+import com.drools.Product;
+
+rule "discount-rule"
+lock-on-active true
+when
+ 	$product:Product($productPrice:productPrice > 50000)
+
+then
+	System.out.println("discount-rule invoked");
+	
+	$product.setDiscount(0.10*$productPrice);
+end
+
+rule "print-product-details"
+no-loop true
+when
+ 	$product:Product($productPrice:productPrice)
+
+then
+	System.out.println("print-product-details invoked");
+	System.out.println("productName-->"+$product.getProductName());
+	System.out.println("productPrice-->"+$product.getProductPrice());
+	System.out.println("discount-->"+$product.getDiscount());
+	modify($product)
+	{
+	setProductPrice($productPrice+10000);
+	}
+	
+end*/

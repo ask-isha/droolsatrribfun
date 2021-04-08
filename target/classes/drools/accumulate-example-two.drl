@@ -1,0 +1,22 @@
+/*package drools;
+
+import com.drools.Product;
+import com.drools.Person;
+import com.drools.Address;
+import java.util.ArrayList;
+
+
+rule "accumulate-example"
+
+when
+
+	$personSet:Object() from accumulate(	$person:Person(age>40);
+				collectSet($person))
+ 	
+then
+		
+	System.out.println("person Set:: "+$personSet);	
+
+	
+end
+*/

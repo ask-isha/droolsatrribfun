@@ -1,0 +1,28 @@
+/*package drools;
+
+import com.drools.Product;
+import com.drools.Person;
+
+rule "retract-rule"
+when
+    
+   $product:Product($productPrice:productPrice>50000) 
+   Person(userType=="Regular")
+
+then
+   	System.out.println("retract-rule invoked");
+    $product.setDiscount(0.1*$productPrice);
+    retract($product);
+end
+
+
+rule "print-product-details"
+when
+	$product:Product()
+then
+	System.out.println("print-product-details rule invoked..");
+	System.out.println("product name::"+$product.getProductName());
+	System.out.println("product price::"+$product.getProductPrice());
+	System.out.println("discount::"+$product.getDiscount());
+
+end*/

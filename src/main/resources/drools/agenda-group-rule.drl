@@ -1,0 +1,73 @@
+package drools;
+
+import com.drools.Product;
+import com.drools.Person;
+
+rule "print-product-details"
+agenda-group "print"
+salience -100
+when
+	$product:Product()
+then
+	System.out.println("print-product-details invoked");
+	System.out.println("product name::"+$product.getProductName());
+	System.out.println("product price::"+$product.getProductPrice());
+	System.out.println("discount::"+$product.getDiscount());
+
+end
+
+rule "print-product-details-1"
+agenda-group "print"
+salience -80
+when
+    
+   $product:Product($productPrice:productPrice>50000) 
+
+then
+    System.out.println("print-rule invoked -80");
+ 
+end
+
+rule "print-product-details-2"
+agenda-group "print"
+salience -50
+when
+    
+   $product:Product($productPrice:productPrice>50000) 
+
+then
+    System.out.println("print-rule invoked -50");
+  
+end
+
+rule "discount-rule-1"
+agenda-group "discount"
+salience -20
+when
+    
+   $product:Product($productPrice:productPrice>50000) 
+   Person(userType=="Regular")
+
+then
+    System.out.println("discount-rule invoked -20");
+    $product.setDiscount(0.1*$productPrice);
+    //drools.setFocus("print");
+end
+
+rule "discount-rule-2"
+agenda-group "discount"
+salience -10
+when
+    
+   $product:Product($productPrice:productPrice>50000) 
+   Person(userType=="Regular")
+
+then
+    System.out.println("discount-rule invoked -10");
+    $product.setDiscount(0.1*$productPrice);
+    //drools.setFocus("print");
+end
+
+
+
+

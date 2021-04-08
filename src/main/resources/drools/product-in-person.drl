@@ -1,0 +1,29 @@
+/*package drools;
+
+import com.drools.Product;
+import com.drools.Person;
+
+rule "product-in-person"
+when
+    
+   //Person(getUserType(),getProduct(),getName())     
+   Person($product:product,$productPrice:product.productPrice>50000,userType=="Regular")
+
+then
+    System.out.println("first rule invoked");
+    $product.setDiscount(0.1*$productPrice);
+    
+end
+
+
+rule "print-product-details"
+when
+	$product:Product()
+then
+	System.out.println("print-product-details rule invoked ");
+	System.out.println("product name::"+$product.getProductName());
+	System.out.println("product price::"+$product.getProductPrice());
+	System.out.println("discount::"+$product.getDiscount());
+
+end
+*/

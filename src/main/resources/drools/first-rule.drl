@@ -1,0 +1,28 @@
+package drools;
+
+import com.drools.Alaram;
+import com.drools.Sprinkler;
+import com.drools.Fire;
+import com.drools.Room;
+
+rule "first-rule"
+
+dialect "java"
+
+when
+   $alaram:Alaram()
+   $sprinkler:Sprinkler()
+then
+    System.out.println("first rule invoked");
+end
+
+rule "first-ruleroom"
+
+when
+	  $room:Room()
+      $fire:Fire($roomHasFire:roomHasFire == "true")
+then
+	System.out.println("Fire Exists...........");
+	insert(new Alaram());
+    
+end

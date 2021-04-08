@@ -1,0 +1,30 @@
+/*package drools;
+
+import com.drools.Product;
+
+rule "rule-one"
+activation-group "actGroup"
+salience 30
+when
+ 	$product:Product()
+then
+	
+	System.out.println("Rule one fired");
+	
+end
+
+rule "rule-two"
+activation-group "actGroup"
+salience 20
+dialect "java"
+when
+ 	$product:Product()
+
+then
+	System.out.println("Rule two fired");
+	if(true)
+	{
+	System.out.println("dialect java");
+	}
+	
+end*/

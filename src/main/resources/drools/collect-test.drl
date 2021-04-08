@@ -1,0 +1,17 @@
+/*package drools;
+
+import com.drools.Product;
+import com.drools.Person;
+import com.drools.Address;
+import java.util.ArrayList;
+
+rule "collect-example"
+
+when
+ 	$personList:ArrayList() from collect(Person(userType=="Regular"))
+then
+	System.out.println("personList::::"+$personList);
+	System.out.println("personList size::::"+$personList.size());
+	
+	
+end*/

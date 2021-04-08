@@ -1,0 +1,15 @@
+/*package drools;
+
+import com.drools.Product;
+import com.drools.Person;
+
+rule "exists-example"
+
+when
+ 	exists Person(age>40)
+
+then
+	System.out.println("Person Exists...........");
+	
+	
+end*/
